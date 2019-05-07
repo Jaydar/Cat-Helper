@@ -4,22 +4,16 @@ import { Button, AppBar, Menu, Toolbar, IconButton, Typography } from "@material
 
 
 import HomePage from "./Home/HomePage"
+import ColorPage from "./Color/ColorPage"
+import Header from "./Element/Header";
+
 const App: React.FC = () => {
     return (
         <Router>
             <div>
-                <AppBar position="static" color="primary">
-                    <Toolbar>
-                        {/* <IconButton color="inherit" aria-label="Open drawer">
-                            <MenuIcon fontSize={"default"} />
-                        </IconButton> */}
-                        <Typography  variant="h6" color="inherit" noWrap>
-                            Cat Helper
-                        </Typography>
-                    </Toolbar>
-                </AppBar>
+                <Header />
                 <Route path="/" exact component={HomePage} />
-                <Route path="/about/" component={HomePage} />
+                <Route path="/ColorPage/" component={ColorPage} />
                 <Route path="/users/" component={HomePage} />
             </div>
         </Router>

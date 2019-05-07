@@ -3,7 +3,7 @@
   "short_name":"Cat Helper",
   "version": "1.0",
   "description": "Jaydar Chrome Tools",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["activeTab", "declarativeContent", "storage","clipboardRead","clipboardWrite"],
   "options_page": "index.html#/",
   "browser_action":{
     "default_icon": {

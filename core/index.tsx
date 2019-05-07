@@ -7,14 +7,14 @@ import "./assets/style.scss"
 
 const theme = createMuiTheme({
     palette: {
-        type: "dark",
+      type: "dark",
       primary: {
         main:"#1d1e21",
         contrastText:"#fff",
       },
       secondary: {
-        main: '#7fabf7',
-        contrastText:"#f0f",
+        main: '#1d1e21',
+        contrastText:"#fff",
       },
     },
 });
