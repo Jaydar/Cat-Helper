@@ -21,7 +21,7 @@ export default class HomePage extends React.Component {
         input.focus()
         document.execCommand("paste");
         let inputValue = input.value.trim();
-
+        console.log(inputValue);
     }
 
     getMode(str:string){
