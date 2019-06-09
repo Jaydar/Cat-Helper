@@ -3,7 +3,6 @@ import { TextField, InputLabel } from "@material-ui/core";
 import "./ColorPage.scss"
 
 
-
 enum ColorMode{ RGB="RGB",RGBA="RGBA",HEX="HEX",HEXA="HEXA",UKN="UKN" }
 
 export default class HomePage extends React.Component {
