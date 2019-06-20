@@ -12,6 +12,9 @@
         color:  rgb(255, 255, 255) !important;
         border-color:rgb(255, 255, 255) !important;
     }
+    .input{
+        height: 1.8em;
+    }
     .notchedOutline{
         &:hover{
             color:  rgb(255, 255, 255) !important;
@@ -19,5 +22,12 @@
         }
         color:rgba(255, 255, 255, 0.23) !important;
         border-color:rgba(255, 255, 255, 0.23) !important;
+    }
+}
+.fad-button{
+    width: 16em !important;
+    letter-spacing:0.3em !important;
+    .label{
+        font-size: 1rem;
     }
 }
