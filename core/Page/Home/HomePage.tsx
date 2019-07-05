@@ -19,40 +19,41 @@ interface PageProps extends RouteComponentProps{
 
 
 export default class HomePage extends React.Component<PageProps>{
+    
     event_select(page:string){
-        
-        console.log(this.props.history.push("ColorPage"));
+        console.log(this.props.history.push(page));
     }
+
     render(){
         return (
             <List className="list" disablePadding={true}>
-                <ListItem button onClick={this.event_select.bind(this,"Color")}>
+                <ListItem button onClick={this.event_select.bind(this,"ColorPage")}>
                     <ListItemIcon color="inherit"><InvertColorsIcon /></ListItemIcon>
-                    <ListItemText inset primary="颜色转换" />
+                    <ListItemText primary="颜色转换" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><CodeIcon /></ListItemIcon>
-                    <ListItemText inset primary="JSON格式化" />
+                    <ListItemText primary="JSON格式化" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><AssignmentReturnedIcon /></ListItemIcon>
-                    <ListItemText inset primary="模板下载器" />
+                    <ListItemText primary="模板下载器" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><CropSquareIcon /></ListItemIcon>
-                    <ListItemText inset primary="二维码生成器" />
+                    <ListItemText primary="二维码生成器" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><HttpICon /></ListItemIcon>
-                    <ListItemText inset primary="跨域请求" />
+                    <ListItemText primary="跨域请求" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><AccessTimeIcon /></ListItemIcon>
-                    <ListItemText inset primary="时间格式转换" />
+                    <ListItemText primary="时间格式转换" />
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon><TextFormatIcon /></ListItemIcon>
-                    <ListItemText inset primary="字符串转码" />
+                    <ListItemText primary="字符串转码" />
                 </ListItem>
             </List>
         )
